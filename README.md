@@ -1,3 +1,1 @@
-# LearnMiniProgram
-# LearnMiniProgram
-# LearnMiniProgram
+# MiniProgram
