@@ -1,0 +1,5 @@
+<!--Pages/category/category.wxml-->
+<text>Pages/category/category.wxml</text>
+<view>我是分类页面</view>
+<view>{{massage}}</view>
+<button size="mini" bindtap="handerSet">改变</button>

@@ -1,7 +1,36 @@
 {
   "pages": [
     "Pages/home/home",
-    "Pages/about/about"
+    "Pages/about/about",
+    "Pages/category/category"
   ],
-  "sitemapLocation": "sitemap28.json"
+
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "托呗",
+    "backgroundColor": "red",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+  },
+  
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "Pages/home/home",
+        "text": "首页",
+        "iconPath": "Pages/image/tabbar/1.png",
+        "selectedIconPath": "Pages/image/tabbar/2.png"
+      },
+
+      {
+        "pagePath": "Pages/category/category",
+        "text": "分类",
+        "iconPath": "Pages/image/tabbar/4.png",
+        "selectedIconPath": "Pages/image/tabbar/9.png"
+      }
+    ]
+  }
 }
