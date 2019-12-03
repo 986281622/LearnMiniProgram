@@ -1,7 +1,13 @@
 {
   "pages": [
     "Pages/home/home",
-    "Pages/about/about"
+    "Pages/about/about",
+    "Pages/profile/profilr"
   ],
-  "sitemapLocation": "sitemap28.json"
+  "sitemapLocation": "sitemap.json",
+
+  "window": {
+    "navigationBarBackgroundColor": "#ff0000"
+    
+  }
 }
