@@ -1,3 +1,35 @@
 <!--Pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+<!--2.获取用户信息的方式-->
+<button size="mini" open-type='getUserInfo' 
+                   bindgetuserinfo="handleGetUserInfo" >获取授权</button>
+
+<!--3.获取展示用户信息的方式 单条获取-->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+<view bindtap="handleViewClick">{{massage}}</view>
+
+

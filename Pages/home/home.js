@@ -1,66 +1,65 @@
 // Pages/home/home.js
+
+//getApp() 获取app() 产生的事例对象
+//const app = getApp()
+//console.log(app.globalData.name)
+//console.log(app.globalData.age)
+
+/* const name = app.globalData.name
+const age = app.globalData.age */
+
+//注册一个页面
+//页面有自己的生命周期的函数
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
 
-  },
+    //--------------2.初始化数据----------------
+    data: {
+        massage: '许二双'
+    },
+    //--------------1.监听生命周期函数----------------
+    //页面被加载出来
+    onLoad() {
+        console.log('onLoad')
+    },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+    onReady() {
+        console.log('onReady')
+    },
 
-  },
+    onShow() {
+        console.log('onShow')
+    },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+    onHide() {
+        console.log('onHide')
+    },
 
-  },
+    onUnload() {
+        console.log('onUnload')
+    },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+    //--------------3.监听xml中相关的一些时间----------------
+    handleGetUserInfo(event) {
+        console.log(event)
+    },
 
-  },
+    handleViewClick(){
+        console.log('二双被电击了')
+    },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+    //--------------4.监听其他事件----------------
+    //监听页面滚动
+    onPageScroll(obj){
+        console.log(obj)
+    },
 
-  },
+    //监听页面滚动到底部
+    onReachBottom(){
+        console.log('到底了')
+    },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+    onPullDownRefresh(){
+        console.log('下拉刷新')
+    }
 })
