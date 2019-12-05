@@ -1,0 +1,8 @@
+
+
+<!--view的基本使用-->
+<view class='box'>你去死</view>
+<view>哈哈哈</view>
+
+<!--2.hover-class: 当用户按下组件时，显示的样式-->
+<view class='box1' hover-class='hoverView'>box1</view>

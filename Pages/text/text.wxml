@@ -1,0 +1,18 @@
+<!--Pages/text/text.wxml-->
+<!--1.基本使用-->
+<text>Hello World\n</text>
+<text>你好小程序\n</text>
+
+<!--2.selectable: true    文本是否可选 默认情况不能选中-->
+<text selectable="{{true}}">是否被选中\n</text>
+<text selectable>是否被选中\n</text>
+
+<!--3.space: 决定文本空格的大小-->
+<text>Hello World\n</text>
+<text space="ensp">Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+<text space="nbsp">Hello World\n</text>
+
+<!--4.decode: 是否解码-->
+<text>5 &gt; 3\n</text>
+<text decode>5 &gt; 3\n</text>

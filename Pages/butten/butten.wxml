@@ -1,0 +1,21 @@
+<!--Pages/butten/butten.wxml-->
+<!--butten 的基本使用-->
+<button>按钮</button>
+
+<!--2.size 属性-->
+<button size='mini'>按钮</button>
+
+<!--3.type 属性-->
+<button size='mini' type='primary'>按钮</button>
+
+<!--4.plain 镂空效果-->
+<button size='mini' type='warn' plain>按钮</button>
+
+<!--5.disabled 是否可用-->
+<button size='mini' type='primary' plain disabled>按钮</button>
+
+<!--6.loading 是否可用-->
+<button size='mini' type='primary' plain loading>按钮</button>
+
+<!--7.hover-class 点下去的背景-->
+<button hover-class='pressed'>按钮</button>
