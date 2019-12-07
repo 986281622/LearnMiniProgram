@@ -1,3 +1,7 @@
 <!--Pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+
+<!--1.hidden属性-->
+<view hidden='{{true}}'>6666</view>

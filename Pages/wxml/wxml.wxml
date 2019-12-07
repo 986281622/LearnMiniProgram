@@ -1,0 +1,74 @@
+<!--Pages/wxml/wxml.wxml-->
+<!--1.wxml的格式-->
+
+<!--2.Mustache语法-->
+<view>{{massage}}</view>
+
+<view>{{firstName}}  {{lastName}}</view>
+
+<view>{{firstName + '         ' + lastName}}</view>
+
+<view>{{age >= 18 ? '成年人' : '未成年人'}}</view>
+
+<view>{{nowTime}}</view>
+
+<button size='mini' bindtap='handleSwitchColor'>切换颜色</button>
+<view class="box {{isActive ? 'active' : ' '}}">老铁 没毛病</view>
+
+<view>-------------条件判断---------------</view>
+<!--wx:if 的使用-->
+<button size='mini' bindtap='handleSwitchShow'>切换显示</button>
+<view wx:if='{{isShow}}'>哈哈啥</view>  
+
+<!--wx:elif/wx:else-->
+<view wx:if='{{score >= 90}}'>优秀</view>
+<view wx:elif='{{score >= 80}}'>良好</view>
+<view wx:elif='{{score >= 60}}'>及格</view>
+<view wx:else>不及格</view>
+
+<!--hidden属性-->
+<!--hidden将一个组件隐藏起来时，该组件依然存在-->
+<view wx:if='{{false}}'>测试hidden属性</view>
+<view hidden='{{true}}'>测试hidden属性</view>
+
+<view>-------------列表渲染-------------</view>
+<!--wx:for 回顾-->
+<!--1.1便利数组/字符串/数字-->
+<!-- <view wx:for='{{["abc", "cas", "qwe"]}}'>{{item}}  {{index}}</view>
+<view wx:for='zhangyu'>{{item}}  {{index}}</view>
+<view wx:for='{{9}}'>{{item}}</view> -->
+
+<!--block标签-->
+<!-- <block wx:if='{{isShow}}'>
+    <button>按钮</button>
+    <text>666666</text>
+    <view>张三李四</view>
+</block>
+
+<block wx:for='{{2}}'>
+    <button>按钮</button>
+    <text>666666</text>
+    <view>张三李四</view>
+</block>
+ -->
+
+<!--3.item 和 index起名字子-->
+
+<view wx:for='{{movies}}' wx:for-item='movie'>{{movie}}</view>
+
+<!--4.key的作用-->
+<view wx:for="{{letts}}">{{item}}</view>
+
+<!--------template------------>
+<!--之前小程序不支持自定义组件， 为了进行代码的服用 template-->
+<!--模板中包裹的内容，在没有被使用前，是不会进行任何渲染的-->
+<!-- <template name='contentItem'>
+    <button size='mini'>{{buttonText}}</button>
+    <view>{{content}}</view>
+</template> -->
+<import src='/wxml/template.wxml'></import>
+
+<template is="contentItem" data="{{buttonText: '按钮', content: '666'}}"/>
+
+<view>---------------------------</view>
+

@@ -1,0 +1,9 @@
+/* Pages/wxml/wxml.wxss */
+.box {
+    background: palegreen;
+    font-size: 50rpx;
+}
+
+.active{
+    color: red;
+}   

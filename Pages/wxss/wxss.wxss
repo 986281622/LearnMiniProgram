@@ -1,0 +1,24 @@
+/* Pages/wxss/wxss.wxss */
+@import './style/box.wxss';
+@import './style/weui-searchbar.wxss';
+.box {
+    color: orange;
+    font-size: 35px;
+}
+
+.containervvvvv {
+    background: orchid;
+}
+
+/* .box1 {
+    width: 120px;
+    height: 100px;
+    background: orchid;
+}
+
+.box2 {
+    width: 240rpx;
+    height: 200rpx;
+    background: palegreen;
+}
+ */
