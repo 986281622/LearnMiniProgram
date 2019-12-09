@@ -1,3 +1,52 @@
 <!--Pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+<!--1.使用自定义组件, 自定义组件的基本使用-->
+<!-- <my-cpn></my-cpn> -->
+
+<!--2.自定义组件的样式细节-->
+<!-- <my-style></my-style> -->
+
+<my-prop title="张皮皮" titleclass='red'></my-prop>
+<my-prop title="张迷迷" titleclass='green'></my-prop>
+<my-prop titleclass='blue'></my-prop>
+
+<!--4.组件内部发生的事件-->
+<view>当前计数： {{counter}}</view>
+<my-event bind:increment='handleIncrement'></my-event>
+
+<!--5.tab-control的练习-->
+<w-tab-control titles="{{['衣服', '裤子', '鞋子']}}"
+                bind:itemClick='tabControlClick'
+></w-tab-control>
+
+<!--6.直接选择组件修改数据/调用方法-->
+<button size='mini' bind:tap='handleIncrementCpn'>修改组件内的数据</button>
+<my-sel class="sel-class" id='sel-id'></my-sel>
+<view>---------------</view>
+
+<!--7.插槽的使用-->
+<!--7.1单个插槽的使用-->
+<my-slot>
+    <button size='mini'>我是插入的按钮</button>
+</my-slot>
+
+<my-slot>
+    <text>66666</text>
+</my-slot>
+
+<my-slot>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575892973773&di=94e8deb41c904849543fde9fc0eac296&imgtype=0&src=http%3A%2F%2Fniuerdata.donews.com%2Fdata%2Fshareimg_oss%2Fbig_media_img%2F2017%2F11%2F05%2F6a1fd928640b910473ec40437e33a97d.JPEG'></image>
+</my-slot>
+<view>-----------------</view>
+<!--7.2 多个插槽的使用-->
+<!--
+    注意事项：
+        1.给每一个插槽起一个名字 name属性
+        2.必须在Component对象中添加一个选项： options
+-->
+<my-mslot>
+    <button size='mini' slot="slot2">插入的按钮</button>
+    <slider slot="slot1"></slider>
+</my-mslot>
